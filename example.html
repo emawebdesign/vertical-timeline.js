@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vertical Timeline</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/vertical-timeline.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+
+      <h1 class="mb-4">Vertical Timeline</h1>
+
+      <div id="timeline"></div>
+
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vertical-timeline.min.js"></script>
+    <script>
+
+        var timeline = new VerticalTimeline({
+            'id' : 'timeline',
+            'mode' : 'light',//or dark
+            'items' : [
+                {
+                'type' : 'primary',
+                'title' : 'The first event',
+                'image' : '<img src="assets/img/user.jpg">',
+                'text' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                'time' : '2 Hours Ago'
+                },
+                {
+                'type' : 'danger',
+                'title' : 'The second event',
+                'image' : '<i class="fas fa-times"></i>',
+                'text' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                'time' : '3 Hours Ago'
+                },
+                {
+                'type' : 'secondary',
+                'title' : 'The third event',
+                'image' : '<i class="fas fa-flag"></i>',
+                'url' : '#',
+                'text' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                'time' : '5 Hours Ago'
+                }
+            ]
+        });
+        
+    </script>
+  </body>
+</html>
